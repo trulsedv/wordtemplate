@@ -1,0 +1,61 @@
+start with default normal.dotm (delete and reopen word to get default)
+Open normal.dotm and make the following changes (right click and open, not new)
+path to normal.dotm:
+%appdata%\Microsoft\Templates\
+
+# LAYOUT RIBBON
+MARGINS
+Top/Bottom/Left/Right	3.5 cm
+Hyphenation				Auto
+
+# DESIGN RIBBON
+Style					Black & White (word)
+FONTS
+Heading font			Cambria
+Body font				Cambria
+PARAGRAPH SPACING
+Size 					12
+Alignment				Justified
+Line sparcing			Multiple at 1.2
+After					12 pt
+
+# HOME RIBBON
+Heading 3 				Color Automatic, Italic, 12 pt, Before 0 pt, After 0 pt
+Heading 2 				Color Automatic, Bold, 13 pt, Before 24 pt, After 0 pt
+Heading 1 				Color Automatic, Bold, 14 pt, Before 36 pt, After 12 pt
+Title					Color Automatic, Bold, 18 pt, Before 36 pt, After 12 pt, Centered, Character Spacing Normal
+Subtitle				Color Automatic, Italic, 12 pt, Centered, Don't hyphenate, Character Spacing Normal
+Caption					Color Automatic, Not Italic, 9 pt, Before 0 pt, After 12 pt
+No spacing 				Keep with next
+List parameters			Justificaton=left
+
+DEFINE NEW MULTILEVEL LIST
+Level 1 				Heading 1, "1.", Position Left 0 0, Space
+Level 2 				Heading 2, "1.1", Position Left 0 0, Space
+
+EQUATION TEMPLATE:
+1 - insert 1x3 table
+2 - set left and right coloumns to 1 cm, middle to 12 cm
+3 - align right cell center right
+4 - Remove all borders
+4 - in table properties
+	in Options...
+	set bottom to 0.42 and the others to 0
+3 - insert equation in middle coloumn
+4 - in right cell:
+	type "("
+	press Ctrl + F9
+	insert "SEQ Equation \* ARABIC"
+	press F9
+	press right arrow
+	type ")"
+5 - select table
+6 - under Insert -> Symbols -> Equation -> press "Save Selection to Equation Gallery..."
+	save as "__empty__"
+7 - navigate to File → Options → Customize Ribbon → Keyboard shortcuts: Customize...
+8 - select "Building Blocks" under Categories, select "__empty__" under Buidling Blocks
+9 - put cursor in "Press new shortcut key", and press Ctrl + | (for example)
+10 - press assign
+
+ref:
+practicaltypography.com
